@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Bootstrap grids</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  .info {
+  	background-color: hsl(15, 90%, 80%);
+  	padding:10px;
+  	border: 1px solid #000;
+  	border-radius: 8px;
+  	margin-top:10px;
+  	margin-bottom: 10px;
+  }
+  .info a {
+  	color: #fff;
+  }
+  .row {
+  	margin-top: 8px;
+  }
+		.red {
+			background-color: hsla(0, 100%, 50%, 0.5);
+			padding:2px;
+		}
+		.green {
+			background-color: hsla(90, 100%, 50%, 0.5);
+			padding:2px;
+		}
+		.blue {
+			background-color: hsla(180, 100%, 50%, 0.5);
+			padding:2px;
+		}
+		
+  </style>
+</head>
+<body>
+  <div class="container">
+
+  	<!-- Navigering -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="http://getbootstrap.com/"><span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">Bootstrap</span></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="index.html">Start <span class="sr-only">(current)</span></a></li>
+	        <li class="active"><a href="index-2.html">Sida 2</a></li>
+	        <li><a href="http://getbootstrap.com/">Bootstrap download</a></li>
+	        <li><a href="http://getbootstrap.com/css/">Bootstrap CSS</a></li>
+	      </ul>
+
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	  <div class="row info col-xs-12 col-sm10 col-md-8 col-lg-6">
+	  	<h2>Bootstrap intro till grid/kolumner</h2>
+			<p class="lead">Gridsystemet är följande:</p>
+			<ul>
+				<li>Extra small  < 768px syntax: <mark>.col-xs-</mark> </li>
+				<li>Small devices  > 768px syntax: <mark>.col-sm-</mark> </li>
+				<li>Medium devices  > 992px syntax: <mark>.col-md-</mark> </li>
+				<li>Large devices  > 1200px syntax: <mark>.col-lg-</mark> </li>
+			</ul>
+			<blockquote class="blockquote-reverse">Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.
+				<footer><a href="http://getbootstrap.com/css/#grid">Bootstraps sajt om CSS - din resurs</a> </footer>
+	  	</blockquote>
+	  	<p class="small">Justera bredden på sidan, så händere en del, kanske oväntat. Och en del som jag inte upptäckt hur jag fixar än...<p>
+	  </div>
+  	<div class="row">
+  		<div class="col-sm-6 col-md-8 red">col-sm-6 col-md-8</div>
+  		<div class="col-sm-6 col-md-4 blue">col-sm-6 col-md-4</div>
+  	</div>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-8 col-lg-12 red">col-xs-4 col-sm-4 col-md-8 col-lg-12</div>
+			<div class="col-xs-4 col-sm-8 col-md-4 col-lg-10 green">col-xs-4 col-sm-8 col-md-4 col-lg-10</div>
+		
+  	</div>  	
+	
+
+  </div>
+</body>
+</html>

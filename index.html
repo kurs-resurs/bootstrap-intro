@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Bootstrap grids</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <script src="https://code.jquery.com/jquery-2.1.3.js"></script> -->
+  <script src="js/jquery-2.2.0.js"></script>
+<script src="js/bootstrap.js"></script>
+  <!-- Latest compiled and minified JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+
+  <style>
+  .info {
+  	background-color: hsl(15, 90%, 80%);
+  	padding:10px;
+  	border: 1px solid #000;
+  	border-radius: 8px;
+  	margin-top:10px;
+  	margin-bottom: 10px;
+  }
+  .info a {
+  	color: #fff;
+  }
+  .row {
+  	margin-top: 8px;
+  }
+		.red {
+			background-color: hsla(0, 100%, 50%, 0.5);
+			padding:2px;
+		}
+		.green {
+			background-color: hsla(90, 100%, 50%, 0.5);
+			padding:2px;
+		}
+		.blue {
+			background-color: hsla(180, 100%, 50%, 0.5);
+			padding:2px;
+		}
+  </style>
+</head>
+<body>
+  <div class="container">
+		
+	<!-- Navigering -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="http://getbootstrap.com/"><span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">Bootstrap</span></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="index.html">Start <span class="sr-only">(current)</span></a></li>
+	        <li><a href="index-2.html">Sida 2</a></li>
+	        <li><a href="http://getbootstrap.com/">Bootstrap download</a></li>
+	        <li><a href="http://getbootstrap.com/css/">Bootstrap CSS</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+  
+
+  <!-- Hämtat in en accordion - under Components -->
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          1) Hämta bootstrap
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <p>Det här är en kort introduktion till Bootstrap. Det är ett s.k. "framework", som gör det enklare att snabbt göra en färdig webbsida. </p>
+        <p>Ett framwork består av färdiga moduler, med färdig css. Genom att ange klasser för html-kod, så får man färdiga moduler, som t.ex. denna sida är ett exempel på.</p>
+        <p>Börja med att ladda ner <a href="http://getbootstrap.com/">Bootstrap här.</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          2) Resurser
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <p>Hur man använder Bootstrap finns det tydliga instruktioner på deras webbplats. Det finns en hel del kod som bara är att klippa och klistra. Och på tal om kod, så blir det betydligt mer kod än vad ni förmodligen är vana vid. Här följer några huvudlänkar. Notera att ni har en meny till innehållet på den långa sida till vänster (om ni gör fönstret tillräckligt stort). Det är ett bra sätt att få översikt över sidan.</p>
+        <ul>
+        	<li><a href="http://getbootstrap.com/getting-started/" class="lead">Getting started</a> innehåller en översikt över Bootstrap. Här förklaras t.ex. olika sätt att ladda ner systemet. Även en hel del info om man använder en s.k. pre-processor, som underlättar när man skriver CSS.  I denna version är det <a href="http://lesscss.org">LESS</a>. Ver 4 av Bootstrap, som är i alfaversion nu, har gått över til <a href="sass-lang.com/">SASS</a>.<br>
+        	Här finns även <a href="http://getbootstrap.com/getting-started/#examples-framework">exempel på</a> hur man använder detta framework. <a href="http://getbootstrap.com/examples/theme/">Ett tydligt exempel</a>. </li>
+        	<li><a href="http://getbootstrap.com/css/" class="lead">CSS</a> Denna sida inleds med att beskriva hur man bygger upp ett HTML-dokument på korrekt sägg. Sedan beskriver den en mängd av olika klasser man kan använda för att utnyttja Bootstrap. Färdiga kolumnsystem (grids), typografi, tabeller, forumlär...</li>
+        	<li><a href="http://getbootstrap.com/components/" class="lead">Components</a> innehåller en hel massa olika färdiga moduler. Menyer som öppnas neråt, navigeringsmenyer, Knappar och en trave andra färdiga moduler.</li>
+        	<li><a href="http://getbootstrap.com/javascript/" class="lead">JavaScript</a> Denna sida beskriva hur man kan använda javaScript. Eftersom JavaScript är en del av Bootstrap finns det funktioner man kan kopiera här också. <br>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+						  Prova denna!
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myModalLabel">Kopierad kod</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>Detta är enbart kod som jag kopierat från denna sida. Om ni kikar i källkoden ser ni att det är en hel del kod. Men det går fort att fixa till en "modal" som man kallar det. Lite mer jobb att formatera det hela.</p>
+						        <p>Men alla är inte lika enkla att få till. När jag försökte med tooltip (ruta ovanför länk/knapp) så räckte det inte med att bara klistra in kod. Det krävdes mer läsande och fixade - och det hade jag inte tid till...</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
+						      </div>
+						    </div>
+						  </div>
+							</div>
+
+        	</li>
+        	<li><a href="http://getbootstrap.com/customize/">Customize</a> Om man använder LESS/SASS behöver man inte ladda ner hela Bootstrap, utan kan välja vilka moduler man vill använda.</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Om sidorna
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <p>På länkarna i navigeringen kommer efterhand lite mer material och fler exempel. Det här är en början</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</body>
+</html>
